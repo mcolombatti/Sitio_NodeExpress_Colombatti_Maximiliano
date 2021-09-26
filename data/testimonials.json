@@ -1,14 +1,20 @@
 [
-    {
-        "id":1,
-        "autor":"Juan",
-        "descripcion":"Excelente",
-        "Valoracion":9
-    },
-    {
-        "id":2,
-        "autor":"Lucia",
-        "descripcion":"Bueno",
-        "Valoracion":6
-    }
+  {
+    "id": 1,
+    "name": "Juan",
+    "description": "Excelente",
+    "deleted": true
+  },
+  {
+    "id": 2,
+    "name": "Lucia",
+    "linkedin": "linkedin/Lucia",
+    "description": "Bueno"
+  },
+  {
+    "id": 6,
+    "name": "maxi",
+    "linkedin": "linkedin/mcolombatti",
+    "description": "excelente sitio"
+  }
 ]

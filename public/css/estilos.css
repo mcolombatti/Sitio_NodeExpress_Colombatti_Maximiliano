@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 html,
 body {
@@ -6,7 +6,6 @@ body {
   font-size: 1.1em;
   font-family: "Poppins", sans-serif;
 }
-
 
 html {
   box-sizing: border-box;
@@ -44,41 +43,50 @@ html {
 
 header {
   position: relative;
- 
-    min-height: 80px; 
-} 
-.companies-icon div:nth-of-type(even), .companies-icon div:nth-of-type(odd) {filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+
+  min-height: 80px;
+}
+.companies-icon div:nth-of-type(even),
+.companies-icon div:nth-of-type(odd) {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
-input[value="enviar"]{
+input[value="enviar"] {
   background-color: #480ca8;
 }
-input[value="enviar"]:hover{
+input[value="enviar"]:hover {
   background-color: #6117b5;
 }
-.companies-icon div:nth-of-type(even):hover, .companies-icon div:nth-of-type(odd):hover  {
+.companies-icon div:nth-of-type(even):hover,
+.companies-icon div:nth-of-type(odd):hover {
   filter: none;
   -webkit-filter: grayscale(0%);
-}.gradient {
-  background: rgb(76, 201, 240);
-  background: linear-gradient( 
-180deg
-, rgb(76, 201, 240)0%,rgb(70, 151, 240) 100% );
 }
-  .cabifoto-color{color: #F72585;}
-path  {
-  fill:rgb(245, 245, 245, 1)}
-.fondo_1 {background: rgb(76, 201, 240);
-    color: white;
+.gradient {
+  background: rgb(76, 201, 240);
+  background: linear-gradient(
+    180deg,
+    rgb(76, 201, 240) 0%,
+    rgb(70, 151, 240) 100%
+  );
+}
+.cabifoto-color {
+  color: #f72585;
+}
+path {
+  fill: rgb(245, 245, 245, 1);
+}
+.fondo_1 {
+  background: rgb(76, 201, 240);
+  color: white;
 }
 
 .fondo_2 {
-  background: rgb(245, 245, 245, 1); 
+  background: rgb(245, 245, 245, 1);
 }
 
 .header {
-
   font-size: 1.25rem;
   color: #fff;
 }
@@ -88,9 +96,8 @@ img[src="img/mobile_formulario.jpg"] {
 }
 
 .quienes_somos {
-  color: #575353
+  color: #575353;
 }
-
 
 .quienes_somos ul {
   padding-left: 0;
@@ -107,7 +114,6 @@ img[src="img/mobile_formulario.jpg"] {
   content: "\f00c";
 }
 
-
 .icono {
   color: #fff;
   height: 5rem;
@@ -119,14 +125,14 @@ img[src="img/mobile_formulario.jpg"] {
   justify-content: center;
   margin: 2em 0;
 }
- 
 
-.galeria img, img[src="img/cabina-8.jpg"] {
+.galeria img,
+img[src="img/cabina-8.jpg"] {
   border-radius: 5%;
 }
 
 .services {
-  color: #575353
+  color: #575353;
 }
 
 footer {
@@ -136,37 +142,69 @@ footer {
 }
 
 .boton-presupuesto a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
-.boton-presupuesto a:hover{
-  color:white
+.boton-presupuesto a:hover {
+  color: white;
+}
+.boton-testimonio a {
+  color: #fff;
+  text-decoration: none;
+}
+.boton-testimonio a:hover {
+  color: white;
 }
 
+nav li a {
+  color: #f72585;
+}
+.boton-testimonio {
+  background-color: #f72585;
+  max-width: 30%;
+}
+.boton-testimonio:hover {
+  background-color: #b5179e;
+}
 .navbar-toggler-icon {
   background-image: url(../img/menu.svg);
 }
-nav li a{color:#F72585}
-.boton-presupuesto  {
-  
-  background-color: #F72585;
+nav li a {
+  color: #f72585;
 }
-.boton-presupuesto:hover { 
-  background-color: #B5179E; 
+.boton-presupuesto {
+  background-color: #f72585;
+}
+.boton-presupuesto:hover {
+  background-color: #b5179e;
 }
 .formulario-background {
-  background: url('../img/cabina-3.jpg');
-  /* filter: brightness(0.5); */border-radius: 30px 60px;
-  box-shadow: inset 0 0 0 50vw rgb(247 37 133 / 74%); 
+  background: url("../img/cabina-3.jpg");
+  /* filter: brightness(0.5); */
+  border-radius: 30px 60px;
+  box-shadow: inset 0 0 0 50vw rgb(247 37 133 / 74%);
+}
+.formulario-background-testimonial {
+  background: url("../img/cabina-3.jpg");
+  /* filter: brightness(0.5); */
+  border-radius: 30px 60px;
+  box-shadow: inset 0 0 0 50vw rgb(255 255 255 / 74%);
+  color: #480ca8;
+}
+.formulario-background-testimonial label {
+  font-weight: 600;
 }
 a[href="#descarga"]:hover {
   color: #f1f1f1;
-} 
+}
+.fondo-testimonial {
+  background-color: rgb(245, 245, 245, 1);
+}
 footer {
   display: grid;
-  padding: 2em; 
+  padding: 2em;
   background: rgb(72, 12, 168);
-  color: #F72585;
+  color: #f72585;
 }
 
 #descarga {
@@ -181,7 +219,7 @@ footer figure {
   padding: 0;
 }
 
-footer>div {
+footer > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -192,14 +230,17 @@ footer iframe {
   width: 100%;
   height: 100%;
 }
-img[src='img/cabina-1.jpeg']{border-radius: 30px 60px;
+img[src="img/cabina-1.jpeg"] {
+  border-radius: 30px 60px;
 }
-h2.eight   span {
-    background: black;
-    padding: 1px 8px;
-    display: table;
-  }
-  .three-icon {background-color: #F72585;}
+h2.eight span {
+  background: black;
+  padding: 1px 8px;
+  display: table;
+}
+.three-icon {
+  background-color: #f72585;
+}
 .feature {
   margin-top: 15px;
   margin-right: 0px;
@@ -210,8 +251,7 @@ h2.eight   span {
   float: left;
   padding: 5px;
   border-radius: 50%;
-  color: #6195FF;
-  border: 1px solid #6195FF;
+  color: #6195ff;
   margin-right: 5px;
 }
 #footer:nth-child(3) {
@@ -240,7 +280,8 @@ footer p {
   grid-row: 2;
   padding: 1em;
   font-family: "open sans";
-  margin: 0;color:#fff
+  margin: 0;
+  color: #fff;
 }
 
 footer ul li:nth-child(1) {
@@ -295,9 +336,8 @@ footer div:last-child {
 h1 {
   margin-bottom: 0;
 }
- 
 
-footer>div {
+footer > div {
   margin-bottom: 2em;
 }
 
@@ -305,7 +345,6 @@ footer>div {
   #barra ul li a {
     padding: 1em 0;
   }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -313,15 +352,8 @@ footer>div {
     flex-direction: row;
   }
 
-
   footer ul {
     flex-direction: row;
-  }
-
-
-
-  .quienes_somos div div:nth-child(2) {
-    padding: 0 2em;
   }
 }
 

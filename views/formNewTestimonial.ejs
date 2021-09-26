@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <title>Cabifoto - Empresa de Cabinas Fotográficas</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link href="res/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <script src="https://kit.fontawesome.com/b19ed06a28.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="container fondo3"><%- include('html/header'); %></header>
+  <section>
+    <section class="header fondo_testimonial p-5">
+      <div class="container formulario-background-testimonial">
+        <div class="row justify-content-center">
+          <div class="col-md-8 borde">
+            <h1 class="mt-3 mb-5">Dejanos tu Testimonio</h1>
+            <form action="testimonio" method="POST">
+              <div class="form-group row ">
+                <div class="col-md-4">
+                  <label for="nombre" class="col-form-label">Nombre: </label> <input name="name" type="text"
+                    type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre..." />
+                </div>
+              </div>
+              <div class="form-group row ">
+                <div class="col-md-4">
+                    <label for="linkedin" class="col-form-label">Linkedin: </label> <input name="linkedin" type="text"
+                    type="text" class="form-control" name="linkedin" id="linkedin" placeholder="tu perfil de linkedin..." />
+                </div>
+              </div>
+              <div class="form-group row ">
+                <div class="col-md-4">
+                  <label for="descripción" class="col-form-label">Descripción </label> <input name="descripción" type="text"
+                    type="text" class="form-control" name="descripcion" id="descripcion" placeholder="descripción..." />
+                </div>
+              </div> 
+                <input type="submit" value="enviar" class="mt-5 text-uppercase mb-5 btn btn-success">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer><%- include('html/footer');%></footer>
+    <script src="../public/js/jquery-3.5.1.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
