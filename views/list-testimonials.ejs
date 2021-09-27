@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Cabifoto - Empresa de Cabinas Fotográficas</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link href="res/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/b19ed06a28.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
-    <h1>Lista de testimonios</h1>
-    <ul>
-      <% all.forEach(function(item){ %>
-      <li>#<%= item.id %> - <%= item.name %></li>
-      <li>#<%= item.id %> - <%= item.linkedin %></li>
-      <li>#<%= item.id %> - <%= item.description %></li>
-      <% }) %>
-    </ul>
+    <header class="container"><%- include('html/header'); %></header>
+    <section class="header p-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="cabifoto-color mb-5">Lista de testimonios</h1>
+
+          <% all.forEach(function(item){ if(item.web == true){%>
+          <div class="col-md-4">
+            <div class="card border-dark mb-3" style="max-width: 18rem">
+              <div class="card-header text-dark">
+                <%=item.id %> - <%= item.name %>
+              </div>
+              <div class="card-body text-dark">
+                <h5 class="card-title"><%= item.linkedin %></h5>
+                <p class="card-text"><%= item.description %></p>
+              </div>
+            </div>
+          </div>
+          <% } else{%> <% }}) %>
+        </div>
+      </div>
+    </section>
+    <footer><%- include('html/footer');%></footer>
+    <script src="../public/js/jquery-3.5.1.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
   </body>
 </html>

@@ -2,19 +2,15 @@
   {
     "id": 1,
     "name": "Juan",
+    "linkedin": "linkedin/Juan",
     "description": "Excelente",
-    "deleted": true
+    "web": true
   },
   {
     "id": 2,
     "name": "Lucia",
     "linkedin": "linkedin/Lucia",
-    "description": "Bueno"
-  },
-  {
-    "id": 6,
-    "name": "maxi",
-    "linkedin": "linkedin/mcolombatti",
-    "description": "excelente sitio"
+    "description": "Bueno",
+    "web": true
   }
 ]

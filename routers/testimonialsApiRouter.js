@@ -50,6 +50,40 @@ router
         });
       });
   })
+  .patch(function (req, res) {
+    promises
+      .readFile("./data/testimonials.json")
+      .then(function (data) {
+        const testimonials = JSON.parse(data.toString());
+        let testimonial = testimonials.find(function (t) {
+          return t.id == req.params.id;
+        });
+
+        if (testimonial) {
+          const index = testimonials.indexOf(testimonial);
+          testimonials[index] = {
+            ...testimonials[index],
+            ...req.body,
+            id: testimonial.id,
+          };
+
+          promises
+            .writeFile("./data/testimonials.json", JSON.stringify(testimonials))
+            .then(function () {
+              res.status(200).json(testimonials[index]);
+            });
+        } else {
+          res.status(404).json({
+            err: 404,
+            msg: `No se encuentra el testimonio #${req.params.id}`,
+          });
+        }
+      })
+      .catch(function (err) {
+        res.status(500);
+        res.json({ err: 500, msg: err.message });
+      });
+  })
   .get(function (req, res) {
     promises
       .readFile("./data/testimonials.json")

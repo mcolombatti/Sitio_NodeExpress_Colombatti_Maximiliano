@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Cabifoto - Empresa de Cabinas Fotográficas</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link href="res/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/b19ed06a28.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <h1>El nuevo testimonio se ha creado correctamente.</h1>
-    <p>#<%= id %> - <%= name %></p>
+    <header class="container fondo3"><%- include('html/header'); %></header>
+    <section class="header fondo_testimonial p-5">
+      <div class="container">
+        <div class="row justify-content-center align-center">
+          <div
+            class="d-flex formulario-background-testimonial-enviado relative"
+          ></div>
+          <div class="col-md-8 borde absolute">
+            <h1 class="mt-3 mb-5 text-center">
+              Testimonio enviado correctamente!
+            </h1>
+            <p class="h3">
+              Gracias <%= name %> , el testimonio ha sido procesado con éxito.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer><%- include('html/footer');%></footer>
+    <script src="../public/js/jquery-3.5.1.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
   </body>
 </html>

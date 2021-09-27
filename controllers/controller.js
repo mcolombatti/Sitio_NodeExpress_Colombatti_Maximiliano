@@ -1,7 +1,7 @@
 import { promises } from "fs";
 import repository from "../repositories/testimonialsRepository.js";
 
-function viewAll(req, res) {
+export function viewAll(req, res) {
   repository.allTestimonials().then(function (testimonials) {
     res
       .render("list-testimonials", {
