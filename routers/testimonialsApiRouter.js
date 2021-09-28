@@ -3,6 +3,15 @@ import { promises } from "fs";
 import repository from "../repositories/testimonialsRepository.js";
 
 const router = express.Router();
+/**
+ * Middleware que actua como una capa de seguridad
+ * cuando se le pide al controlador que ejecute una accion
+ * que requiere permisos (metodo delete, patch)
+ * 
+ * @param req 
+ * @param res 
+ * @param next 
+ */
 function mw_permission(req, res, next) {
   if (req.query.pass === "123") {
     next();
@@ -50,7 +59,7 @@ router
         });
       });
   })
-  .patch(function (req, res) {
+  .patch([mw_permission],function (req, res) {
     promises
       .readFile("./data/testimonials.json")
       .then(function (data) {
@@ -63,8 +72,7 @@ router
           const index = testimonials.indexOf(testimonial);
           testimonials[index] = {
             ...testimonials[index],
-            ...req.query, // en la URI se deberia colocar el query ?web=true 
-            //para que se visualice en web el testimonio.
+            ...req.body,  
             id: testimonial.id,
           };
 

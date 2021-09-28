@@ -9,11 +9,22 @@
     "name": "Lucia",
     "linkedin": "linkedin/Lucia",
     "description": "Bueno",
-    "web": true
+    "web": true,
+    "pass": "123"
 }, {
     "name": "Lucas",
     "linkedin": "lucass",
     "description": "Me encanta",
     "id": 3,
-    "web":  true 
-} ]
+    "web": true
+}, {
+    "name": "Martin",
+    "linkedin": "martin",
+    "description": "No me gusta el sitio",
+    "id": 4
+}, {
+    "name": "Mariana",
+    "linkedin": "mariana",
+    "description": "me gustaria que muestren mas imagenes",
+    "id": 5
+}]
