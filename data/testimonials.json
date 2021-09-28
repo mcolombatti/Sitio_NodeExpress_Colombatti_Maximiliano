@@ -1,16 +1,19 @@
-[
-  {
+[{
     "id": 1,
     "name": "Juan",
     "linkedin": "linkedin/Juan",
     "description": "Excelente",
     "web": true
-  },
-  {
+}, {
     "id": 2,
     "name": "Lucia",
     "linkedin": "linkedin/Lucia",
     "description": "Bueno",
     "web": true
-  }
-]
+}, {
+    "name": "Lucas",
+    "linkedin": "lucass",
+    "description": "Me encanta",
+    "id": 3,
+    "web":  true 
+} ]

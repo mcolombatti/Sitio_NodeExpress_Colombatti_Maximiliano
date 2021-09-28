@@ -12,7 +12,7 @@ export async function allTestimonials() {
     .then(function (data) {
       const testimonials = JSON.parse(data.toString());
       return testimonials.filter(function (testimonial) {
-        return testimonial.deleted != true;
+        return testimonial.deleted != true && testimonial.web == true;
       });
     })
     .catch(function (err) {

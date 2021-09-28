@@ -63,7 +63,8 @@ router
           const index = testimonials.indexOf(testimonial);
           testimonials[index] = {
             ...testimonials[index],
-            ...req.body,
+            ...req.query, // en la URI se deberia colocar el query ?web=true 
+            //para que se visualice en web el testimonio.
             id: testimonial.id,
           };
 
