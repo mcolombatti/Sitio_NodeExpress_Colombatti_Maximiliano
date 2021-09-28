@@ -31,7 +31,7 @@ export async function create(entity) {
       const testimonials = JSON.parse(data.toString());
 
       entity.id = testimonials.length + 1;
-
+      entity.web = false;
       testimonials.push(entity);
 
       return promises.writeFile(
